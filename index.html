@@ -13,17 +13,16 @@
     />
     <title>JS e-mail list</title>
   </head>
-  <body>
-    <header class="container text-center">Random Mail List Generator</header>
+  <body class="">
+    <header class="container text-center p-3 border rounded bg-primary mt-3 text-white">Random Mail List Generator</header>
     <main class="container">
-        <div class="row">
-            <div id="mails" class="col-12">
-
-            </div>
-            <button id ="btn" class="btn btn-primary btn-sm " role="button">Genera</button>
-        </div>
+      <div id="mail-box" class="row text-center"></div>
+      <div class="text-center">
+        <button id="btn" class="btn btn-lg btn-info mt-3 text-white" role="button">
+          Genera
+        </button>
+      </div>
     </main>
-    
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
