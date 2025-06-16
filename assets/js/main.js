@@ -20,10 +20,10 @@ buttonEl.addEventListener("click", () => {
         col6.className = "col-6 mt-3 mb-3"; //*assegno le classi bootstrap alla col
         const card = document.createElement("div"); //*genero il div .card
         mailboxEl.appendChild(col6); //*inserisco le col-6 dentro la row #mail-box
-        card.className = "border rounded border-info p-3 text-center"; //*assegno le classi bootstrap alla card
+        card.className = "border rounded p-3 text-center bg-light-subtle"; //*assegno le classi bootstrap alla card
         card.textContent = data.response; //*inserisco la response dell'API dentro la card
         col6.appendChild(card); //*inserisco le card dentro le col-6
-        buttonEl.className = "btn btn-lg btn-success mt-3"; //*modifico il bottone dopo averlo cliccato la prima volta
+        buttonEl.className = "btn btn-lg btn-success mt-3 mb-3"; //*modifico il bottone dopo averlo cliccato la prima volta
         buttonEl.textContent = "Genera 10 nuove mail"; //*modifico il testo del bottone dopo il primo 'click' event
       })
       .catch((err) => {
